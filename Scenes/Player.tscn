@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/Player/PlayerMovement.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Player/Ui.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/CHICKEN Pie.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.313212
+height = 2.13712
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.955
+mid_height = 4.1
+
+[sub_resource type="CylinderShape" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+size = 48
+font_data = ExtResource( 3 )
+
+[node name="Player" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Head" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9282, 0 )
+
+[node name="Camera" type="Camera" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.00976753 )
+keep_aspect = 0
+fov = 90.0
+far = 417.0
+
+[node name="SpotLight" type="SpotLight" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1282, -0.464372 )
+visible = false
+light_energy = 3.58
+spot_range = 26.5841
+spot_angle = 35.1562
+
+[node name="RayMin" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.64194, -1.03974 )
+enabled = true
+cast_to = Vector3( 0, -1.328, 0 )
+
+[node name="RayMax" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, -2.59679, -1.00352 )
+enabled = true
+cast_to = Vector3( 0, -0.3, 0 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.94222, 0 )
+shape = SubResource( 3 )
+
+[node name="Light" type="OmniLight" parent="."]
+visible = false
+light_energy = 2.38
+omni_range = 15.6649
+omni_attenuation = 0.00866851
+
+[node name="UI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fade" type="ColorRect" parent="UI"]
+margin_top = -2.0
+margin_right = 3188.0
+margin_bottom = 2266.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day" type="Label" parent="UI"]
+margin_left = 10.3181
+margin_top = 10.3181
+margin_right = 390.318
+margin_bottom = 95.3181
+custom_fonts/font = SubResource( 4 )
+text = "Day: 
+"
+
+[node name="Eggs" type="Label" parent="UI"]
+margin_left = 8.73071
+margin_top = 81.7511
+margin_right = 388.731
+margin_bottom = 204.751
+custom_fonts/font = SubResource( 4 )
+text = "Eggs:
+"
+
+[node name="Ambient" type="OmniLight" parent="."]
+light_energy = 0.71
+light_indirect_energy = 5.41
+omni_range = 18.8588

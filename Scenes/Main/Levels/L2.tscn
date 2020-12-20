@@ -1,0 +1,192 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Interactable/Egg.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Interactable/Egg/Egg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Interactable/Box2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Interactable/Box3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Interactable/Box1.tscn" type="PackedScene" id=5]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.988235, 1, 0.615686, 1 )
+metallic_specular = 0.0
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 3, 3, 1.5 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.572549, 0.32549, 0.0392157, 1 )
+metallic_specular = 0.0
+
+[sub_resource type="CubeMesh" id=4]
+material = SubResource( 3 )
+size = Vector3( 4, 4, 3 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.517647, 0.372549, 0.372549, 1 )
+metallic_specular = 0.0
+
+[sub_resource type="CubeMesh" id=6]
+material = SubResource( 5 )
+size = Vector3( 3, 3, 1.5 )
+
+[node name="L2" type="Spatial"]
+
+[node name="Egg" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2117, 13.156, 16.6426 )
+script = ExtResource( 1 )
+
+[node name="Egg2" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.979116, 0.195076, 0.05724, -0.2033, 0.939507, 0.275675, 0, -0.281554, 0.959545, -13.736, 13.156, 17.5267 )
+script = ExtResource( 1 )
+
+[node name="Egg3" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0497, 13.156, 13.2616 )
+script = ExtResource( 1 )
+
+[node name="Egg4" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4562, 13.156, -43.5492 )
+script = ExtResource( 1 )
+
+[node name="Egg5" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9041, 13.156, -28.1851 )
+script = ExtResource( 1 )
+
+[node name="Egg7" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0593, 13.156, -42.9913 )
+script = ExtResource( 1 )
+
+[node name="Egg8" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.28605, 0.16218, 27.5813 )
+script = ExtResource( 1 )
+
+[node name="Egg9" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.7117, 0.16218, 41.4171 )
+script = ExtResource( 1 )
+
+[node name="Egg10" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6549, 5.51726, -15.5366 )
+script = ExtResource( 1 )
+
+[node name="Egg11" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 0.946644, -0.322282, 0, 0.322282, 0.946644, 32.8557, -0.259871, -45.3448 )
+script = ExtResource( 1 )
+
+[node name="Egg6" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.946605, -0.207155, 0.247033, 0.213781, 0.976882, 0, -0.241322, 0.0528108, 0.969007, 28.7718, 15.9719, -40.2275 )
+script = ExtResource( 1 )
+
+[node name="Boxes3" type="Spatial" parent="."]
+
+[node name="Box" type="MeshInstance" parent="Boxes3" instance=ExtResource( 5 )]
+transform = Transform( 0.843448, 0, -0.537211, 0, 1, 0, 0.537211, 0, 0.843448, 16.0307, 1.4346, 35.0603 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Box11" type="MeshInstance" parent="Boxes3" instance=ExtResource( 5 )]
+transform = Transform( 0.98547, 0, -0.169848, 0, 1, 0, 0.169848, 0, 0.98547, 16.0307, 1.4346, 32.6685 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Box25" type="MeshInstance" parent="Boxes3" instance=ExtResource( 5 )]
+transform = Transform( 0.805442, 0, 0.592674, 0, 1, 0, -0.592674, 0, 0.805442, 21.9368, 1.4346, 34.0152 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Box26" type="MeshInstance" parent="Boxes3" instance=ExtResource( 5 )]
+transform = Transform( 0.564636, 0.82534, -1.34465e-07, 0, -1.62921e-07, -1, -0.82534, 0.564636, -9.19908e-08, 32.1298, 4.72407, 40.9872 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Box2" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.340215, 0, -0.940348, 0, 1, 0, 0.940348, 0, 0.340215, 11.7681, 1.97745, 42.1669 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box3" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.0347948, 0, -0.999395, 0, 1, 0, 0.999395, 0, 0.0347948, 14.6566, 1.97745, 38.6942 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box8" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.782358, 0, -0.622829, 0, 1, 0, 0.622829, 0, -0.782358, 21.1203, 1.97745, 42.2754 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box9" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.18673, 0, -0.982411, 0, 1, 0, 0.982411, 0, 0.18673, 22.6701, 1.97745, 37.229 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box14" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.979631, 0, -0.200804, 0, 1, 0, 0.200804, 0, 0.979631, 31.7844, 1.97745, 42.2112 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box15" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.977057, 0, 0.212979, 0, 1, 0, -0.212979, 0, 0.977057, 37.213, 1.97745, 42.469 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box17" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.918667, 0, -0.395033, 0, 1, 0, 0.395033, 0, 0.918667, 32.7955, 1.97745, 38.5675 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box28" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.998523, -0.0543227, 8.85029e-09, 0, -1.62921e-07, -1, 0.0543227, -0.998523, 1.6268e-07, 7.80247, 16.885, -37.4272 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box29" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.823364, -0.567513, 9.24596e-08, 0, -1.62921e-07, -1, 0.567513, -0.823364, 1.34143e-07, 13.0073, 16.885, -37.7721 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box22" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.928661, -0.37093, 6.04322e-08, 0, -1.62921e-07, -1, 0.37093, -0.928661, 1.51298e-07, 13.2421, 5.43516, 40.3404 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box23" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.0221116, -0.999755, 1.62881e-07, 0, -1.62921e-07, -1, 0.999755, -0.0221116, 3.60243e-09, 13.4991, 8.41181, 38.2831 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box24" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.51931, -0.854586, 1.3923e-07, 0, -1.62921e-07, -1, 0.854586, 0.51931, -8.46064e-08, 17.7878, 7.34894, 39.4282 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box10" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( 0.998995, 0, -0.0448225, 0, 1, 0, 0.0448225, 0, 0.998995, 15.6633, 4.9236, 34.4602 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box12" type="MeshInstance" parent="Boxes3" instance=ExtResource( 4 )]
+transform = Transform( -0.252154, 0, -0.967687, 0, 1, 0, 0.967687, 0, -0.252154, 22.4639, 5.92017, 40.4295 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Box4" type="MeshInstance" parent="Boxes3" instance=ExtResource( 3 )]
+transform = Transform( 0.646683, 0.762759, -1.05358e-07, -1.62921e-07, 2.65431e-14, -1, -0.762759, 0.646683, 1.24269e-07, 18.4293, 0.728356, 38.3955 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Box5" type="MeshInstance" parent="Boxes3" instance=ExtResource( 3 )]
+transform = Transform( 0.997193, 0.0748743, -1.62463e-07, -1.62921e-07, 2.65431e-14, -1, -0.0748743, 0.997193, 1.21986e-08, 18.2735, 2.13239, 38.3955 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Box6" type="MeshInstance" parent="Boxes3" instance=ExtResource( 3 )]
+transform = Transform( 0.881345, -0.472474, -1.43589e-07, -1.62921e-07, 2.65431e-14, -1, 0.472474, 0.881345, -7.69757e-08, 18.499, 3.62434, 38.388 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Box7" type="MeshInstance" parent="Boxes3" instance=ExtResource( 3 )]
+transform = Transform( 0.814662, 0.579935, -1.32725e-07, -1.62921e-07, 2.65431e-14, -1, -0.579935, 0.814662, 9.44835e-08, 17.4616, 5.11451, 38.2903 )
+mesh = SubResource( 6 )
+material/0 = null

@@ -1,0 +1,332 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/Misc/toiletpaper.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1.65191, 0.82838, 0.806861 )
+
+[node name="TP" type="Spatial"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+
+[node name="toiletpaper" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper2" type="MeshInstance" parent="."]
+transform = Transform( 4.95656, 0, 0.657649, 0, 5, 0, -0.657649, 0, 4.95656, -0.557342, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper3" type="MeshInstance" parent="."]
+transform = Transform( 4.91042, 0, -0.942221, 0, 5, 0, 0.942221, 0, 4.91042, -1.11355, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper4" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -0.590401 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper5" type="MeshInstance" parent="."]
+transform = Transform( 4.95656, 0, 0.657649, 0, 5, 0, -0.657649, 0, 4.95656, -0.557342, 0, -0.590401 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper6" type="MeshInstance" parent="."]
+transform = Transform( 4.91042, 0, -0.942221, 0, 5, 0, 0.942221, 0, 4.91042, -1.11355, 0, -0.590401 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper7" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper8" type="MeshInstance" parent="."]
+transform = Transform( 4.95656, 0, 0.657649, 0, 5, 0, -0.657649, 0, 4.95656, -0.557342, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper9" type="MeshInstance" parent="."]
+transform = Transform( 4.91042, 0, -0.942221, 0, 5, 0, 0.942221, 0, 4.91042, -1.11355, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper10" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.65705, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper11" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.0997, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper12" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 0.543495, 0, -1.15332 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper13" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.65705, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper14" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.0997, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper15" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 0.543495, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper16" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.65705, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper17" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.0997, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper19" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 0.543495, 0, -0.0348819 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper20" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.65705, 0, -0.0348819 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper21" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 1.0997, 0, -0.0348819 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper18" type="MeshInstance" parent="."]
+transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 0.543495, 0, -0.618077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper22" type="MeshInstance" parent="."]
+transform = Transform( 4.99905, 0, 0.097296, 0, 5, 0, -0.097296, 0, 4.99905, 0.0112728, 0.541244, 0.00517881 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper23" type="MeshInstance" parent="."]
+transform = Transform( 4.94283, 0, 0.753975, 0, 5, 0, -0.753975, 0, 4.94283, -0.545964, 0.541244, 0.0160242 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper24" type="MeshInstance" parent="."]
+transform = Transform( 4.92782, 0, -0.84649, 0, 5, 0, 0.84649, 0, 4.92782, -1.10207, 0.541244, 0.0268476 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper25" type="MeshInstance" parent="."]
+transform = Transform( 4.99905, 0, 0.097296, 0, 5, 0, -0.097296, 0, 4.99905, -0.000215904, 0.541244, -0.58511 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper26" type="MeshInstance" parent="."]
+transform = Transform( 4.94283, 0, 0.753975, 0, 5, 0, -0.753975, 0, 4.94283, -0.557452, 0.541244, -0.574265 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper27" type="MeshInstance" parent="."]
+transform = Transform( 4.92782, 0, -0.84649, 0, 5, 0, 0.84649, 0, 4.92782, -1.11356, 0.541244, -0.563441 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper28" type="MeshInstance" parent="."]
+transform = Transform( 4.99905, 0, 0.097296, 0, 5, 0, -0.097296, 0, 4.99905, -0.0111699, 0.541244, -1.14792 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper29" type="MeshInstance" parent="."]
+transform = Transform( 4.94283, 0, 0.753975, 0, 5, 0, -0.753975, 0, 4.94283, -0.568406, 0.541244, -1.13708 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper30" type="MeshInstance" parent="."]
+transform = Transform( 4.92782, 0, -0.84649, 0, 5, 0, 0.84649, 0, 4.92782, -1.12451, 0.541244, -1.12625 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper31" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.64556, 0.541244, -1.18017 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper32" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.08833, 0.541244, -1.16932 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper33" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 0.532222, 0.541244, -1.1585 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper34" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.65598, 0.541244, -0.645026 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper35" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.09874, 0.541244, -0.634181 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper36" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 0.542638, 0.541244, -0.623357 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper37" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.65598, 0.541244, -0.645026 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper38" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.09874, 0.541244, -0.634181 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper39" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 0.553986, 0.541244, -0.0402725 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper40" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.66733, 0.541244, -0.0619413 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper41" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 1.11009, 0.541244, -0.0510959 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper42" type="MeshInstance" parent="."]
+transform = Transform( -4.99905, 0, -0.0972976, 0, 5, 0, 0.0972976, 0, -4.99905, 0.542638, 0.541244, -0.623357 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper43" type="MeshInstance" parent="."]
+transform = Transform( -4.99897, 0, 0.101309, 0, 5, 0, -0.101309, 0, -4.99897, 0.554445, 1.05377, -1.14771 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper44" type="MeshInstance" parent="."]
+transform = Transform( -4.96887, 0, -0.557085, 0, 5, 0, 0.557085, 0, -4.96887, 1.11167, 1.05377, -1.13642 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper45" type="MeshInstance" parent="."]
+transform = Transform( -4.89032, 0, 1.04152, 0, 5, 0, -1.04152, 0, -4.89032, 1.66777, 1.05377, -1.12515 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper46" type="MeshInstance" parent="."]
+transform = Transform( -4.99897, 0, 0.101309, 0, 5, 0, -0.101309, 0, -4.99897, 0.542482, 1.05377, -0.55743 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper47" type="MeshInstance" parent="."]
+transform = Transform( -4.96887, 0, -0.557085, 0, 5, 0, 0.557085, 0, -4.96887, 1.09971, 1.05377, -0.546138 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper48" type="MeshInstance" parent="."]
+transform = Transform( -4.89032, 0, 1.04152, 0, 5, 0, -1.04152, 0, -4.89032, 1.6558, 1.05377, -0.534868 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper49" type="MeshInstance" parent="."]
+transform = Transform( -4.99897, 0, 0.101309, 0, 5, 0, -0.101309, 0, -4.99897, 0.531076, 1.05377, 0.00537419 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper50" type="MeshInstance" parent="."]
+transform = Transform( -4.96887, 0, -0.557085, 0, 5, 0, 0.557085, 0, -4.96887, 1.0883, 1.05377, 0.0166669 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper51" type="MeshInstance" parent="."]
+transform = Transform( -4.89032, 0, 1.04152, 0, 5, 0, -1.04152, 0, -4.89032, 1.6444, 1.05377, 0.0279367 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper52" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -1.12563, 1.05377, -0.0282005 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper53" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.568401, 1.05377, -0.0169077 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper54" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.0123069, 1.05377, -0.00563788 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper55" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -1.11478, 1.05377, -0.563334 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper56" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.557556, 1.05377, -0.552041 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper57" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.00146198, 1.05377, -0.540772 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper58" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -1.11478, 1.05377, -0.563334 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper59" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.557556, 1.05377, -0.552041 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper60" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, 0.0103546, 1.05377, -1.12385 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper61" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -1.10297, 1.05377, -1.14641 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper62" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.54574, 1.05377, -1.13512 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="toiletpaper63" type="MeshInstance" parent="."]
+transform = Transform( 4.99897, 0, -0.101307, 0, 5, 0, 0.101307, 0, 4.99897, -0.00146198, 1.05377, -0.540772 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.295229, 0.448798, -0.605281 )
+shape = SubResource( 2 )
