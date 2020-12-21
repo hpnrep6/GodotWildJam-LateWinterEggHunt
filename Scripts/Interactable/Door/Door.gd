@@ -55,7 +55,7 @@ func _process(delta):
 				cooldown = COOLDOWN;
 				delay = DELAY;
 				Global.updateUI(UI_OPEN);
-				print(3)
+		
 			false: 
 				animation.play("DoorOpen");
 				opened = true;
