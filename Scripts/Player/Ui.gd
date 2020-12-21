@@ -41,5 +41,4 @@ func nextLevel(level):
 	pass
 
 func updateUI(message):
-	print(message);
 	pass
